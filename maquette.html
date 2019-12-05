@@ -5,42 +5,157 @@
     <meta charset="utf-8">
 </head>
 <body>
+
+<header>
+    <nav>
+        <ul>
+            <li>Accueil</li>
+            <li>Annonces
+                <ul>
+                    <li>Catégorie 1</li>
+                    <li>Catégorie 2</li>
+                    <li>Catégorie 3</li>
+                    <li>Catégorie N</li>
+                </ul>
+            </li>
+            <li>Inscription/Espace utilisateur</li>
+            <li>Connexion/Déconnexion</li>
+        </ul>
+    </nav>
+</header>
 <!-- Contenus des pages (vues) -->
 <!-- Page d'accueil -->
-
-
+<h1>Bienvenue sur mon site de partage de petites annonces</h1>
+<p>Vous pouvez naviguer, via le menu, entre les différentes pages.</p>
 
 <!-- Toutes les annonces (par categorie) -->
-
-
+<h1>Toutes les annonces</h1>
+<h2>Catégorie 1</h2>
+<nav>
+    <ul>
+        <li>Annonce 1</li>
+        <li>Annonce 2</li>
+        <li>Annonce 3</li>
+        <li>Annonce N</li>
+    </ul>
+</nav>
+<h2>Catégorie 2</h2>
+<nav>
+    <ul>
+        <li>Annonce 1</li>
+        <li>Annonce 2</li>
+        <li>Annonce 3</li>
+        <li>Annonce N</li>
+    </ul>
+</nav>
+<h2>Catégorie 3</h2>
+<nav>
+    <ul>
+        <li>Annonce 1</li>
+        <li>Annonce 2</li>
+        <li>Annonce 3</li>
+        <li>Annonce N</li>
+    </ul>
+</nav>
+<h2>Catégorie N</h2>
+<nav>
+    <ul>
+        <li>Annonce 1</li>
+        <li>Annonce 2</li>
+        <li>Annonce 3</li>
+        <li>Annonce N</li>
+    </ul>
+</nav>
 
 <!-- Annonces d'une categorie -->
-
-
+<h1>Nom catégorie</h1>
+<nav>
+    <ul>
+        <li>Annonce 1</li>
+        <li>Annonce 2</li>
+        <li>Annonce 3</li>
+        <li>Annonce N</li>
+    </ul>
+</nav>
 
 <!-- Annonce singulière -->
-
-
+<h1>Titre de l'annonce</h1>
+<p><img src="https://via.placeholder.com/300x150" alt=""></p>
+<p>Circa hos dies Lollianus primae lanuginis adulescens, Lampadi filius ex praefecto, exploratius causam Maximino spectante, convictus codicem noxiarum artium nondum per aetatem firmato consilio descripsisse, exulque mittendus, ut sperabatur, patris inpulsu provocavit ad principem, et iussus ad eius comitatum duci, de fumo, ut aiunt, in flammam traditus Phalangio Baeticae consulari cecidit funesti carnificis manu.</p>
+<p>Date de parution</p>
 
 <!-- Formulaire d'enregistrement -->
-
-
+<h1>Inscription/modification des données utilisateur</h1>
+<form action="" method="">
+    <input type="text" name="nom" placeholder="Votre nom ex: Dupont">
+    <input type="text" name="prenom" placeholder="Votre prénom ex: Jean">
+    <input type="text" name="email" placeholder="Votre adresse email ex: jean.d@gmail.com">
+    <input type="text" name="email2" placeholder="Confirmation de votre adresse email">
+    <input type="password" name="passwd" placeholder="Choisissez un mot de passe">
+    <input type="password" name="passwd2" placeholder="Veuillez confirmer votre mot de passe">
+    <input type="submit" value="valider/modifier">
+</form>
 
 <!-- Vue des données d'un utilisateur -->
-
-
+<h1>Espace utilisateur</h1>
+<p>Jean Dupont</p>
+<p>jean.d@gmail.com</p>
+<button>Modifier mes infos</button>
+<button>Me désinscrire</button>
+<nav>
+    <ul>
+        <li>Ajouter une annonce</li>
+        <li>Voir mes annonces</li>
+    </ul>
+</nav>
 
 <!-- Vue du formulaire d'insertion d'une annonce -->
-
-
+<h1>Insertion/Modification d'une annonce</h1>
+<form action="" method="">
+    <input type="text" name="titre" placeholder="Choisissez un titre pour votre annonce">
+    <input type="file" name="image">
+    <textarea name="contenu"></textarea>
+    <input type="submit" value="valider/modifier">
+</form>
 
 <!-- Vue de la liste des annonces d'un utilisateur -->
-
+<h1>Mes annonces</h1>
+<table>
+    <tr>
+        <th>Titre</th>
+        <th>Date</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Annonce 1</td>
+        <td>05/04/2019</td>
+        <td>voir/modifier/supprimer</td>
+    </tr>
+    <tr>
+        <td>Annonce 2</td>
+        <td>05/04/2019</td>
+        <td>voir/modifier/supprimer</td>
+    </tr>
+    <tr>
+        <td>Annonce 3</td>
+        <td>05/04/2019</td>
+        <td>voir/modifier/supprimer</td>
+    </tr>
+    <tr>
+        <td>Annonce N</td>
+        <td>05/04/2019</td>
+        <td>voir/modifier/supprimer</td>
+    </tr>
+</table>
 
 
 <!-- Vue du formulaire de connexion -->
-
-
+<h1>Connexion</h1>
+<form action="" method="">
+    <input type="text" name="email" placeholder="Votre adresse email">
+    <input type="password" name="passwd" placeholder="Votre mot de passe">
+    <input type="submit" value="connexion">
+</form>
 
 </body>
 </html>
