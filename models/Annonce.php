@@ -8,15 +8,15 @@ class Annonce {
 
     }
 
-    public function select() {
+    public function select(int $id) {
 
     }
 
-    public function selectByCat() {
+    public function selectByCat(int $id) {
 
     }
 
-    public function selectByUser() {
+    public function selectByUser(int $id) {
 
     }
 
@@ -24,11 +24,11 @@ class Annonce {
 
     }
 
-    public function update() {
+    public function update(int $id) {
 
     }
 
-    public function delete() {
+    public function delete(int $id) {
 
     }
 
