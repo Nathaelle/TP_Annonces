@@ -7,29 +7,19 @@ En préambule, je vous rappelle que vous pouvez consulter sans restriction aucun
 Ce projet fait echo à votre demande d'avoir une proposition de correction, ainsi qu'une architecture complète MVC.
 D'un point de vue méthodologie, nous allons procéder par phases, qui elles mêmes seront découpées en itérations incrémentales. En gros, on va faire les choses dans l'ordre où cela doit être fait...
 
-## 2ème PHASE : Définition des composants d'accès aux données - CRUD
+## 3ème PHASE : Définition des fonctionnalités d'affichage - Les vues
 
-Maintenant que notre base de données est opérationnelle, et que son import (exécution du script) s'est correctement déroulé, il convient de définir nos composants (modèles) d'accès aux données.
+Maintenant que nous avons prédéfini la structure de nos composants d'accès aux données, définissont nos fonctionnalités d'affichage : les vues, et pour cela, nous allons créer (ou récupérer) une maquette HTML.
 
-Reprennons nos fonctions principales :
-- Afficher la page d'accueil
-- Afficher toutes les annonces
-- Afficher toutes les annonces d'une catégorie
-- Afficher une annonce singulière
-- Permettre à un utilisateur de s'enregistrer, modifier ses informations personnelles, se désinscrire
-- Afficher les informations relatives à un utilisateur
-- Afficher les annonces d'un utilisateur
-- Permettre à un utilisateur de publier une annonce, de la modifier, de la supprimer
-- Permettre à un utilisateur de se connecter/déconnecter du système
+Reprennons nos fonctions principales, et regardons nos besoins fonctionnels vis-à-vis de l'affichage :
+- Afficher la page d'accueil : vue de la page d'accueil
+- Afficher toutes les annonces : vue de toutes les annonces sous forme de liste, groupées par catégories
+- Afficher toutes les annonces d'une catégorie : vue des annonces d'une catégorie sous forme de liste
+- Afficher une annonce singulière : vue d'une annonce particulière
+- Permettre à un utilisateur de s'enregistrer, modifier ses informations personnelles, se désinscrire : vue d'un formulaire d'inscription
+- Afficher les informations relatives à un utilisateur : vue des données d'un utilisateur
+- Afficher les annonces d'un utilisateur : vue d'une liste des annonces d'un utilisateur
+- Permettre à un utilisateur de publier une annonce, de la modifier, de la supprimer : vue d'un formulaire d'ajout/modification d'une annonce
+- Permettre à un utilisateur de se connecter/déconnecter du système : vue d'un formulaire de connexion
 
-Maintenant, regardont nos besoins fonctionnels vis-à-vis de notre base de données :
-- Afficher toutes les annonces : nécessite la lecture de l'ensemble des occurences de la table `annonce`
-- Afficher toutes les annonces d'une catégorie : nécessite la lecture d'un ensemble d'occurences de la table `annonce` restreint à une categorie
-- Afficher une annonce singulière : nécessite la lecture d'une occurence de la table `annonce` restreinte à son identifiant
-- Permettre à un utilisateur de s'enregistrer, modifier ses informations personnelles, se désinscrire : nécessite l'écriture d'une nouvelle occurence dans la table `utilisateur`, la modification d'une occurence existante restreinte à l'identifiant d'un utilisateur, la suppression d'une occurence existante restreinte à l'identifiant d'un utilisateur
-- Afficher les informations relatives à un utilisateur: nécessite la lecture d'une occurence de la table `utilisateur` restreinte à l'identifiant d'un utilisateur
-- Afficher les annonces d'un utilisateur : nécessite la lecture d'un ensemble d'occurences de la table `annonce` restreint à un utilisateur
-- Permettre à un utilisateur de publier une annonce, de la modifier, de la supprimer : nécessite l'écriture d'une nouvelle occurence dans la table `annonce`, la modification d'une occurence existante restreinte à l'identifiant d'une annonce et de sa propriété par un utilisateur, la suppression d'une occurence existante restreinte à l'identifiant d'une annonce et sa propriété par un utilisateur
-- Permettre à un utilisateur de se connecter/déconnecter du système : necessite la lecture de l'ensemble des occurences de la table `utilisateur` restreinte à une propriété discriminante, nécessite la lecture d'une occurence de la table `utilisateur` restreinte à son identifiant
-
-Nous allons donc créer 3 modèles d'accès aux données : Utilisateur, Annonce et Categorie.
+Nous allons donc prévoir ces 9 vues différentes à partir d'une maquette HTML.

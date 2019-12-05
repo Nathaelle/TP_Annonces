@@ -8,11 +8,11 @@ class Utilisateur {
 
     }
 
-    public function select() {
+    public function select(int $id) {
 
     }
 
-    public function verifByMail() {
+    public function verifByMail(string $mail) {
         
     }
 
@@ -20,12 +20,12 @@ class Utilisateur {
 
     }
 
-    public function update() {
+    public function update(int $id) {
 
     }
 
-    public function delete() {
-        
+    public function delete(int $id) {
+
     }
 
 }
